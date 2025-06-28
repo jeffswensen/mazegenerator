@@ -7,7 +7,7 @@ A Go application that generates random mazes and saves them as PNG files optimiz
 - **Random Maze Generation**: Uses recursive backtracking algorithm to create unique mazes every time
 - **Path Validation**: Ensures every generated maze has a valid path from start to finish using BFS
 - **Print-Optimized**: Output is sized perfectly for standard 8.5"x11" paper at 300 DPI
-- **Visual Markers**: Clear "START" and "FINISH" text labels
+- **Visual Markers**: Circle (○) symbol for start, square (■) symbol for finish, with legend
 - **High Quality**: Crisp black walls on white background for excellent print quality
 
 ## Usage
@@ -32,7 +32,7 @@ The application will:
 - **Colors**: 
   - Black walls
   - White paths
-  - Black "START" and "FINISH" text labels with white backgrounds
+  - Legend showing circle (○) for start and square (■) for finish
 
 ## Project Structure
 
@@ -72,7 +72,7 @@ mazegenerator/
 ### Rendering
 - **Cell Size**: 84 pixels per cell
 - **Wall Thickness**: 8 pixels
-- **Markers**: Text labels "START" and "FINISH" with bordered backgrounds
+- **Markers**: Circle symbol for start position, square symbol for finish position, with legend header
 - **Image Format**: RGBA PNG with high contrast colors
 
 ## Configuration
@@ -123,8 +123,8 @@ Placing start and finish points...
 Rendering maze to PNG (maze_20250628_093332.png)...
 Image dimensions: 2108x2708 pixels
 ✓ Maze saved as 'maze_20250628_093332.png'
-Start: (0, 24) - marked with "START" text
-Finish: (24, 0) - marked with "FINISH" text
+Start: (0, 24) - marked with circle (○) symbol
+Finish: (24, 0) - marked with square (■) symbol
 
 The maze is optimized for printing on 8.5"x11" paper.
 Ready to print and solve!
